@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-light navbar-expand-lg" id="mainNav">
     <div class="container">
-        <a class="navbar-brand" href="http://ashrafkabir.com/">Ashraf Kabir</a>
+        <a class="navbar-brand" href="http://www.whereisanis.com/">whereisanis</a>
         <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler"
                 aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars"></i>
@@ -8,8 +8,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item" role="presentation"><a class="nav-link" href="index.php">Home</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="about.php">About us</a></li>
-                <li class="nav-item" role="presentation"><a class="nav-link" href="contact.php">Contact us</a></li>
+                <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="about.php">About us</a></li> -->
+                <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="contact.php">Contact us</a></li> -->
                 <li class="nav-item" role="presentation"><a class="nav-link" href="view-posts.php">View Posts</a></li>
                 <?php if (strlen($_SESSION['login']) != 0) {
                     ?>

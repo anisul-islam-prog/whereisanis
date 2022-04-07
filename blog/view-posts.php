@@ -11,6 +11,7 @@ $_SESSION['redirectURL'] = $_SERVER['REQUEST_URI'];
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <title>Blog Posts</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet"
@@ -21,24 +22,24 @@ $_SESSION['redirectURL'] = $_SERVER['REQUEST_URI'];
 
 <body>
     <!-- Header -->
-    <?php include 'includes/header.php'; ?>
+    <?php include 'includes/header-other.php'; ?>
 
-    <header class="masthead" style="background-image:url('assets/img/home-bg.jpg');">
+    <!-- <header class="masthead" style="background-image:url('assets/img/home-bg.jpg');">
         <div class="overlay"></div>
         <div class="container">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
                     <div class="site-heading">
-                        <h1>Kabir's Blog</h1><span class="subheading">An Informative Blog</span>
+                        <h1>'s Blog</h1><span class="subheading">An Informative Blog</span>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
     <!-- Header -->
 
     <article>
-        <div class="container">
+        <div class="container mt-5 pt-5">
             <div class="row">
                 <?php
                 if (isset($_GET['page_no']) && $_GET['page_no'] != "") {
@@ -87,7 +88,7 @@ $_SESSION['redirectURL'] = $_SERVER['REQUEST_URI'];
                     <?php }
                 } ?>
 
-                <div style='padding: 10px 20px 0;'>
+                <div class="col-md-10 col-lg-12 text-center mb-3" style='padding: 10px 20px 0;'>
                     <strong>Page <?php echo $page_no . " of " . $total_no_of_pages; ?></strong>
                 </div>
 

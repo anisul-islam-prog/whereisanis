@@ -50,7 +50,7 @@ if (strlen($_SESSION['login']) == 0) {
             echo "<script>alert('Something went wrong')</script>";
         }
     }
-    ?>
+?>
     <!DOCTYPE html>
     <html lang="en">
 
@@ -58,33 +58,22 @@ if (strlen($_SESSION['login']) == 0) {
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
         <title>Add Post</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
         <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
         <script src="assets/js/tinymce.min.js" referrerpolicy="origin"></script>
-        <script>tinymce.init({selector: 'textarea'});</script>
+        
     </head>
 
     <body>
         <!-- Header -->
-        <?php include 'includes/header.php'; ?>
+        <?php include 'includes/header-other.php'; ?>
 
-        <header class="masthead" style="background-image:url('assets/img/home-bg.jpg');">
-            <div class="overlay"></div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto">
-                        <div class="site-heading">
-                            <h1>Kabir's Blog</h1><span class="subheading">An Informative Blog</span></div>
-                    </div>
-                </div>
-            </div>
-        </header>
         <!-- Header -->
 
-        <div class="container">
+        <div class="container mt-5 pt-5">
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
                     <h2 class="post-title">Add a post</h2>
@@ -92,8 +81,7 @@ if (strlen($_SESSION['login']) == 0) {
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
                                 <label for="title">Title</label>
-                                <input class="form-control" type="text" id="title" required placeholder="Title"
-                                       name="title">
+                                <input class="form-control" type="text" id="title" required placeholder="Title" name="title">
                                 <small class="form-text text-danger help-block">Title</small>
                             </div>
                         </div>
@@ -101,8 +89,7 @@ if (strlen($_SESSION['login']) == 0) {
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
                                 <label for="select1"><strong>Select Category</strong></label>
-                                <select class="form-control" id="select1"
-                                        name="selectcat" required>
+                                <select class="form-control" id="select1" name="selectcat" required>
                                     <option value="">-- Select --</option>
                                     <?php $ret = "SELECT `id`,`catname` FROM `categories`";
                                     $query = $dbh->prepare($ret);
@@ -111,11 +98,11 @@ if (strlen($_SESSION['login']) == 0) {
                                     $results = $query->fetchAll(PDO::FETCH_OBJ);
                                     if ($query->rowCount() > 0) {
                                         foreach ($results as $result) {
-                                            ?>
+                                    ?>
                                             <option value="<?php echo htmlentities($result->id); ?>">
                                                 <?php echo htmlentities($result->catname); ?>
                                             </option>
-                                        <?php }
+                                    <?php }
                                     } ?>
                                 </select>
                                 <small class="form-text text-danger help-block">Select Category</small>
@@ -125,8 +112,7 @@ if (strlen($_SESSION['login']) == 0) {
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
                                 <label for="grabber">Grabber</label>
-                                <input class="form-control" type="text" id="grabber" required placeholder="Grabber"
-                                       name="grabber">
+                                <input class="form-control" type="text" id="grabber" required placeholder="Grabber" name="grabber">
                                 <small class="form-text text-danger help-block">Grabber</small>
                             </div>
                         </div>
@@ -142,8 +128,7 @@ if (strlen($_SESSION['login']) == 0) {
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls">
                                 <label for="desc">Description</label>
-                                <textarea class="form-control" id="desc" required rows="5"
-                                          name="description"></textarea>
+                                <textarea class="form-control" id="desc" rows="5" name="description"></textarea>
                                 <small class="form-text text-danger help-block">Description</small>
                             </div>
                         </div>
@@ -157,23 +142,21 @@ if (strlen($_SESSION['login']) == 0) {
                         if ($query->rowCount() > 0) {
                             foreach ($results as $result2) {
                                 $name = $result2->fname . " " . $result2->lname;
-                                ?>
+                        ?>
                                 <div class="control-group">
                                     <div class="form-group floating-label-form-group controls">
                                         <label for="name">Username</label>
-                                        <input class="form-control" type="text" id="name" required
-                                               name="name" value="<?php echo htmlentities($name); ?>">
+                                        <input class="form-control" type="text" id="name" required name="name" value="<?php echo htmlentities($name); ?>">
                                         <small class="form-text text-danger help-block">Username</small>
                                     </div>
                                 </div>
-                            <?php }
+                        <?php }
                         }
                         ?>
                         <br>
                         <div id="success"></div>
                         <div class="form-group">
-                            <button class="btn btn-primary float-right" id="sendMessageButton" type="submit"
-                                    name="submit">Post
+                            <button class="btn btn-primary float-right" id="sendMessageButton" type="submit" name="submit">Post
                             </button>
                         </div>
                     </form>
@@ -187,6 +170,11 @@ if (strlen($_SESSION['login']) == 0) {
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/clean-blog.js"></script>
+        <script>
+            tinymce.init({
+                selector: 'textarea'
+            });
+        </script>
     </body>
 
     </html>

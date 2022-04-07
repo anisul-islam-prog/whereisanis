@@ -12,6 +12,7 @@ $_SESSION['redirectURL'] = $_SERVER['REQUEST_URI'];
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -29,7 +30,7 @@ $_SESSION['redirectURL'] = $_SERVER['REQUEST_URI'];
             <div class="row">
                 <div class="col-md-10 col-lg-8 mx-auto">
                     <div class="site-heading">
-                        <h1>Kabir's Blog</h1><span class="subheading">An Informative Blog</span></div>
+                        <h1>Anis's Blog</h1><span class="subheading">An Informative Blog</span></div>
                 </div>
             </div>
         </div>

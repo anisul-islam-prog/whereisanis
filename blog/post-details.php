@@ -34,6 +34,7 @@ if (isset($_POST['submit'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Post Details</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
@@ -70,9 +71,9 @@ if (isset($_POST['submit'])) {
             <div class="overlay"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="col-md-10 col-lg-4 mx-auto">
                         <div class="site-heading">
-                            <h1>Kabir's Blog</h1><span class="subheading">An Informative Blog</span></div>
+                            <!-- <h1>Kabir's Blog</h1><span class="subheading">An Informative Blog</span></div> -->
                     </div>
                 </div>
             </div>
@@ -99,6 +100,7 @@ if (isset($_POST['submit'])) {
                                         width="auto" height="auto" style="border:solid 1px #000"></p>
                             <?php } ?>
                             <p style="text-align: justify;"><?php echo htmlentities($result->description); ?></p>
+                            //TODO: Figure out a way to print styles
                             <p class="post-meta">Posted by&nbsp;<?php echo htmlentities($result->username); ?>
                                                  on <?php echo htmlentities($result->creationdate); ?>
                             </p>

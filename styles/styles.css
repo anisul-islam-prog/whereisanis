@@ -366,20 +366,14 @@ section {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 18rem;
 }
 
 .header-content .right-header .name {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 .header-content .right-header .name span {
   color: var(--color-secondary);
-}
-
-.header-content .right-header p {
-  margin: 1.5rem 0;
-  line-height: 2rem;
 }
 
 .header-content .right-header .words-wrapper {
@@ -407,6 +401,22 @@ section {
 .header-content .right-header .words-wrapper .is-hidden {
   -webkit-animation: push-out 0.6s;
   animation: push-out 0.6s;
+}
+
+.header-content .right-header p {
+  margin: 1.5rem 0;
+  line-height: 2rem;
+  padding-right: 18rem;
+}
+
+.header-content .right-header .btn-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 18rem;
 }
 
 /*About*/
@@ -1079,8 +1089,9 @@ section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main-btn {
@@ -1204,14 +1215,19 @@ section {
   .right-header {
     -ms-grid-row: 1;
     grid-row: 1;
-    padding-right: 0rem !important;
     width: 90%;
     margin: 0 auto;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     text-align: center;
     padding-top: 3rem;
+  }
+  .right-header p {
+    padding-right: 0rem !important;
+  }
+  .right-header .btn-con {
+    padding-right: 0rem !important;
   }
   .header-content .left-header .image {
     margin: 0 auto;
@@ -1369,7 +1385,13 @@ section {
         grid-template-columns: repeat(2, 1fr);
   }
   .header-content .right-header {
-    padding-right: 9rem;
+    padding-right: 5rem;
+  }
+  .header-content .right-header p {
+    padding-right: 0rem !important;
+  }
+  .header-content .right-header .btn-con {
+    padding-right: 0rem !important;
   }
 }
 
@@ -1430,15 +1452,38 @@ section {
     margin: 0 auto;
   }
   .right-header .name {
-    font-size: 2.5rem !important;
+    font-size: 2rem !important;
     text-align: center;
     padding-top: 3rem;
+  }
+  .right-header p {
+    padding-right: 0rem !important;
+  }
+  .right-header .btn-con {
+    padding-right: 0rem !important;
   }
 }
 
 @media screen and (max-width: 700px) {
   .section {
     padding: 7rem 3rem;
+  }
+  .right-header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2rem !important;
+    text-align: center;
+    padding-top: 3rem;
+  }
+  .right-header p {
+    padding-right: 0rem !important;
+  }
+  .right-header .btn-con {
+    padding-right: 0rem !important;
   }
   .about-stats .progress-bars {
     -ms-grid-columns: (1fr)[1];

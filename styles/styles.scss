@@ -361,19 +361,14 @@ section {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-right: 18rem;
+
 
         .name {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
 
             span {
                 color: var(--color-secondary);
             }
-        }
-
-        p {
-            margin: 1.5rem 0;
-            line-height: 2rem;
         }
 
         .words-wrapper {
@@ -403,6 +398,19 @@ section {
                 -moz-animation: push-out 0.6s;
                 animation: push-out 0.6s;
             }
+        }
+
+        p {
+            margin: 1.5rem 0;
+            line-height: 2rem;
+            padding-right: 18rem;
+
+        }
+
+        .btn-con {
+            display: flex;
+            justify-content: center;
+            padding-right: 18rem;
         }
     }
 }
@@ -958,7 +966,7 @@ section {
 /*Independed components*/
 .btn-con {
     display: flex;
-    align-self: flex-start;
+    justify-content: center;
 }
 
 .main-btn {

@@ -20,13 +20,13 @@ function PageTransitions() {
         if (id) {
             //resmove selected from the other btns
             sectBtns.forEach((btn) => {
-                btn.classList.remove('active')
+                btn.classList.remove('active');
             })
-            e.target.classList.add('active')
+            e.target.classList.add('active');
 
             //hide other sections
             sections.forEach((section) => {
-                section.classList.remove('active')
+                section.classList.remove('active');
             })
 
             const element = document.getElementById(id);
@@ -38,7 +38,10 @@ function PageTransitions() {
     const themeBtn = document.querySelector('.theme-btn');
     themeBtn.addEventListener('click', () => {
         let element = document.body;
-        element.classList.toggle('light-mode')
+        element.classList.toggle('light-mode');
+        const themeIcon = document.getElementById('iconBtn');
+        $(themeIcon).toggleClass('fa-sun fa-moon');
+        // themeIcon.toggleClass('fa-sun-bright ');
     })
 }
 

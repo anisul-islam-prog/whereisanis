@@ -6,6 +6,22 @@
 }
 
 :root {
+    --color-primary: #191d2b;
+    --color-secondary: #27AE60;
+    --color-white: #FFFFFF;
+    --color-white-new: #FFFFFF;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
+    --color-grey-6: #12181b;
+}
+
+.light-mode {
+
     --color-primary: #FFFFFF;
     --color-secondary: #03024e;
     --color-white: #454e56;
@@ -20,21 +36,6 @@
     --color-grey-6: #12181b;
     --br-sm-2: 14px;
     --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3);
-}
-
-.dark-mode {
-    --color-primary: #191d2b;
-    --color-secondary: #27AE60;
-    --color-white: #FFFFFF;
-    --color-white-new: #FFFFFF;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #dbe1e8;
-    --color-grey-2: #b2becd;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #2a2e35;
-    --color-grey-6: #12181b;
     
 }
 
@@ -327,11 +328,12 @@ section {
 }
 
 .about-stats {
-    padding-bottom: 4rem;
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
 
     .progress-bars {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 2rem;
 
         .progress-bar {
@@ -465,7 +467,9 @@ section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
-    padding-bottom: 3rem;
+    // padding-bottom: 3rem;
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
 
     .timeline-item {
         position: relative;

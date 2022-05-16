@@ -1276,8 +1276,8 @@ section {
     padding: 2rem 2.5rem !important;
   }
   .about-stats .progress-bars {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .portfolios {
     -ms-grid-columns: (1fr)[1];
@@ -1486,8 +1486,8 @@ section {
     padding-right: 0rem !important;
   }
   .about-stats .progress-bars {
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
   .about-container .right-about {
     -ms-grid-columns: (1fr)[1];

@@ -954,11 +954,11 @@ section {
             display: flex;
             justify-content: flex-start;
         }
-
-        .btn-con {
-            display: flex;
-            justify-content: center;
-        }
+    }
+    .btn-con {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
     }
 }
 

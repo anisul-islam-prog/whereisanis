@@ -1075,7 +1075,7 @@ section {
           justify-content: flex-start;
 }
 
-.contact-content-con .btn-con {
+.contact-container .btn-con {
   margin-top: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
